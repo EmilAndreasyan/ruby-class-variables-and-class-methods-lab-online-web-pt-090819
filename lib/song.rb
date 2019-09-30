@@ -34,9 +34,10 @@ end
    @@genre_count["key"] << @@genres.flatten.count
   end
   
-  
+  @@artist_count = {}
   def self.artist_count
-    @@artist_count = @@artists.count
+    @@artist_count["key"] = []
+    @@artist_count["key"] << @@artists.count
   end
   end
 
@@ -47,4 +48,4 @@ Song.count
 Song.artists
 Song.genres
 Song.genre_count
-#Song.artist_count
+Song.artist_count
