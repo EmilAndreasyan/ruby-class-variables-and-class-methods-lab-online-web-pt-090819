@@ -12,7 +12,7 @@ end
   @@count = ["lucifer", "Jay-Z", "rap"]
   
   def self.count
-    @@count.count
+    @@count.length
 end
   
   @@artists = ["Jay-Z", "Jay-Z", "Brittany Spears"]
