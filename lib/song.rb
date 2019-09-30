@@ -31,7 +31,7 @@ end
   def self.genre_count
    
    @@genre_count["key"] = []
-   @@genre_count["key"] << @@genres
+   @@genre_count["key"] << @@genres.flatten.count
   end
   
   
