@@ -5,11 +5,12 @@ def initialize(name, artist, genre)
 @name = name
 @artist = artist
 @genre = genre
-@@artist_count = {}
+@@count += 1
 
 end
 
-  @@count = ["lucifer", "Jay-Z", "rap"]
+  @@count = 0
+  #["lucifer", "Jay-Z", "rap"]
   
   def self.count
     @@count.length
@@ -24,7 +25,7 @@ end
   @@genres = ["rap", "rap", "pop"]
 
   def self.genres
-  @@genres
+  @@genres.uniq
   end
   
   @@genre_count = {} 
