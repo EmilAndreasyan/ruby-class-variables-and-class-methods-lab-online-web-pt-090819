@@ -6,7 +6,7 @@ def initialize(name, artist, genre)
 @artist = artist
 @genre = genre
 @@count += 1
-
+@@genres << genre
 end
 
   @@count = 0
@@ -22,7 +22,8 @@ end
 @@artists
   end
   
-  @@genres = ["rap", "rap", "pop"]
+  @@genres = []
+  # =  ["rap", "rap", "pop"]
 
   def self.genres
   @@genres.uniq
@@ -30,15 +31,18 @@ end
   
   @@genre_count = {} 
   def self.genre_count
-   
-   @@genre_count["key"] = []
-   @@genre_count["key"] << @@genres.flatten.count
+   @@genre_count[genre] = []
+   @@genres.each do |x|
+   @@genres[genre] << x
+ end
   end
   
   @@artist_count = {}
   def self.artist_count
-    @@artist_count["key"] = []
-    @@artist_count["key"] << @@artists.count
+    @@artist_count[artists] = []
+    @@artists.each do |artist|
+    @@artist_count[artist] << artist
+  end
   end
   end
 
